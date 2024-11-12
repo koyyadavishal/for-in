@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //string
+    let str="hello world"
+    let a="";
+    for(i=str.length-1;i>=0;i--){
+        a+=str[i];
+    }
+    console.log(a);
+
+
+
+    //array    
+    let arr=[23,54,67,64,46,95,98];
+    let oddsum=0;
+
+    
+    let evensum=0;
+     
+    for(i=0;i<arr.length;i++){
+        if(arr[i]%2==0){
+            oddsum+=arr[i]
+        }
+        else{
+            evensum+=arr[i] 
+        }
+    }
+    console.log("oddsum is " , oddsum);
+    console.log("evensum is " , evensum);
+
+    //object
+    let obj={
+        name:"vishal",
+        age:21
+    };
+    for (let [key, value] of Object.entries(obj)) {
+    console.log(key, value);
+}
+    </script>
+</body>
+</html>
